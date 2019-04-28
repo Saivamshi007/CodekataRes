@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+		calci 
+		
+	</title>
+
+	<script type="text/javascript">
+		
+
+
+		function add(){
+
+
+			var first=document.tiral.firstNum.value;
+			var second=document.tiral.secondNum.value;
+             
+
+            var c=Number(first);
+     		var d=Number(second);
+
+			var result=c+d;
+
+			document.getElementById("result").value=result;
+		}
+		function sub(){
+
+			var first=document.tiral.firstNum.value;
+     		var second=document.tiral.secondNum.value;
+
+     		console.log(typeof(Number(first)));
+     		console.log(second);
+
+     		var c=Number(first);
+     		var d=Number(second);
+
+			var result=c-d;
+
+			document.getElementById("result").value=result;
+
+
+
+
+		}
+
+		function mult(){
+
+
+			var first=document.tiral.firstNum.value;
+			var second=document.tiral.secondNum.value;
+
+			var c=Number(first);
+     		var d=Number(second);
+
+			var result=c*d;
+			document.getElementById("result").value=result;
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<form name="tiral">
+
+		
+			<input type="text" name="firstNum" id="firstNum">
+
+			<input type="text" name="secondNum" id="secondNum">
+
+
+			
+			<ol><input type="button" onclick="add();" value="+"></ol>
+			<ol><input type="button" onclick="sub();" value="-"></ol>
+			<ol><input type="button" onclick="mul();" value="*"></ol>
+
+			<ol><input type="text"  id="result" name="result"></ol>
+
+		
+		
+	</form>
+
+
+
+
+
+
+
+</body>
+</html>
